@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição para o Evento</title>
+    <script>
+        // Função para exibir a mensagem de confirmação
+        function mostrarConfirmacao(event) {
+            event.preventDefault();  // Previne o envio real do formulário para simular o sucesso
+            document.getElementById('confirmacao').style.display = 'block';  // Exibe a mensagem de confirmação
+        }
+    </script>
+</head>
+<body>
+    <h1>Inscrição para o Evento</h1>
+    
+    <p align= "justify">Bem-vindo ao nosso evento! Este evento oferece uma excelente oportunidade para aprendizado e networking. Ao se inscrever, você poderá participar de palestras, workshops e outras atividades que irão enriquecer sua experiência e conhecimento na área. Não perca a chance de fazer parte deste evento incrível! Complete o formulário abaixo para garantir sua participação.</p>
+
+    <!-- Formulário de Inscrição -->
+    <form onsubmit="mostrarConfirmacao(event)">
+        <!-- Nome Completo -->
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <!-- E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Número de Telefone -->
+        <label for="telefone">Número de Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required><br><br>
+
+        <!-- Gênero -->
+        <label>Gênero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="Masculino" required>
+        <label for="masculino">Masculino</label><br>
+
+        <input type="radio" id="feminino" name="genero" value="Feminino">
+        <label for="feminino">Feminino</label><br>
+
+        <input type="radio" id="outro" name="genero" value="Outro">
+        <label for="outro">Outro</label><br><br>
+
+        <!-- Interesses no Evento -->
+        <label>Interesse no Evento:</label><br>
+        <input type="checkbox" id="palestras" name="interesse" value="Palestras">
+        <label for="palestras">Palestras</label><br>
+
+        <input type="checkbox" id="workshops" name="interesse" value="Workshops">
+        <label for="workshops">Workshops</label><br>
+
+        <input type="checkbox" id="networking" name="interesse" value="Networking">
+        <label for="networking">Networking</label><br><br>
+
+        <!-- Escolha de Data -->
+        <label for="data">Escolha a Data de Participação:</label>
+        <input type="date" id="data" name="data" required><br><br>
+
+        <!-- Botão de Envio -->
+        <input type="submit" value="Enviar Inscrição">
+    </form>
+
+    <!-- Mensagem de Confirmação -->
+    <div id="confirmacao" style="display:none; color: green; margin-top: 20px;">
+        <p>Sua inscrição foi recebida com sucesso!</p>
+    </div>
+</body>
+</html>

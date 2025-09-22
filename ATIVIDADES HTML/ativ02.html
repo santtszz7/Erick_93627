@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <style>
+        /* Estilos simples para melhorar a aparência da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label, input, button {
+            margin: 5px;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: grey;
+        }
+
+        ol {
+            margin-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .task-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox {
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minhas Tarefas</h1>
+
+    <label for="nova-tarefa">Digite uma nova tarefa:</label>
+    <input type="text" id="nova-tarefa" placeholder="Adicionar tarefa...">
+    <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+
+    <h3>Tarefas Pendentes</h3>
+    <ol id="lista-tarefas">
+        <!-- As tarefas serão inseridas aqui -->
+    </ol>
+
+    <script>
+        // Função para adicionar uma tarefa à lista
+        function adicionarTarefa() {
+            const tarefaInput = document.getElementById('nova-tarefa');
+            const tarefaTexto = tarefaInput.value.trim();
+
+            if (tarefaTexto === '') {
+                alert('Por favor, digite uma tarefa.');
+                return;
+            }
+
+            const lista = document.getElementById('lista-tarefas');
+
+            // Criando o item da lista
+            const li = document.createElement('li');
+            const div = document.createElement('div');
+            div.classList.add('task-container');
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.classList.add('checkbox');
+            checkbox.onclick = () => {
+                if (checkbox.checked) {
+                    li.classList.add('completed');
+                } else {
+                    li.classList.remove('completed');
+                }
+            };
+
+            const texto = document.createElement('span');
+            texto.textContent = tarefaTexto;
+
+            div.appendChild(checkbox);
+            div.appendChild(texto);
+            li.appendChild(div);
+            lista.appendChild(li);
+
+            // Limpar o campo de entrada após adicionar
+            tarefaInput.value = '';
+        }
+    </script>
+
+</body>
+</html>

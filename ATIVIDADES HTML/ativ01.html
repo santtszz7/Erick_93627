@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário</title>
+</head>
+<body>
+    <h1>Perfil de Usuário</h1>
+    
+    <p>Bem-vindo(a) ao perfil de Alone</p>
+    
+    <h2>Foto do Usuário</h2>
+    <img src="image/perfil.png" alt="Foto do Usuário"><br><br>
+
+    <h3>Informações Básicas</h3>
+    <form action="/update" method="post">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" value="Alone" disabled><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="alone7@gmail.com" disabled><br><br>
+
+        <label for="data-nascimento">Data de Nascimento:</label>
+        <input type="date" id="data-nascimento" name="data-nascimento" value="2003-07-07" disabled><br><br>
+
+        <label for="cidade">Cidade:</label>
+        <select id="cidade" name="cidade" disabled>
+            <option value="fsa" selected>Feira de Santana</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="bh">Belo Horizonte</option>
+        </select><br>
+    </form>
+
+    <h3>Interesses</h3>
+    <ul>
+        <li>Tecnologia</li>
+        <li>Música</li>
+        <li>Viagens</li>
+    </ul><br>
+
+    <form action="/edit" method="get">
+        <input type="submit" value="Editar Perfil">
+    </form>
+</body>
+</html>
