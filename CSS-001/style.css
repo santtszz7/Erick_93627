@@ -1,0 +1,37 @@
+h1{
+/*Aplicar cor do Texto*/
+color: rgb(14, 1, 88);
+/*centralizando o Texto*/
+text-align: center;
+/*Tipo de Fonte*/
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/*Tamanho do Texto*/
+font-size: 25pt;
+/*Destacar fonte em Negrito*/
+font-weight: bold;
+}
+
+h2{
+/*Aplicar cor do Texto*/
+color: darkblue;
+/*Tipo de Fonte*/
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/*Colocar o texto sublinhado*/
+text-decoration: underline;
+/*Margem é a distância da borda da página*/
+margin-left: 20px;
+margin-right: 20px;
+/*Plano de Fundo*/
+background-color: blueviolet;
+/*Padding é o espaçamento dos Objetos*/
+padding-left: 5px;
+}
+
+p{
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
+
+}
