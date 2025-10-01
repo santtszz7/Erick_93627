@@ -1,0 +1,24 @@
+nav{
+    background-color:rgb(255, 123, 0);
+    border-bottom: 5px solid black;
+    text-align: center;
+    
+}
+img{
+    height: 200px;
+    padding: 20px;
+    background-color: rgb(255, 123, 0);
+}
+    
+
+ul{
+    /*Alinha os itens na horizontal*/
+    display: flex; 
+}
+li{
+    background-color: aliceblue;
+    padding: 20px;
+    list-style: none;
+     
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
