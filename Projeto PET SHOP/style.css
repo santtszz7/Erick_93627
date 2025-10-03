@@ -1,24 +1,202 @@
 nav{
-    background-color:rgb(255, 123, 0);
-    border-bottom: 5px solid black;
-    text-align: center;
-    
+justify-content: center;
+background-color: rgb(255, 123, 0);
+border-bottom: 4px solid rgb(255, 94, 0);
 }
 img{
-    height: 200px;
-    padding: 20px;
-    background-color: rgb(255, 123, 0);
-}
-    
 
-ul{
-    /*Alinha os itens na horizontal*/
-    display: flex; 
+    padding: center;
+    width: 200px;
+    height: 200px;
+    padding-left: 900px;
+    margin-top: 20px;
+    border: 200px;
 }
-li{
-    background-color: aliceblue;
+div{
+justify-content: center;
+display: flexbox;
+border-bottom: 1000px;
+}
+ul{
+   justify-content: center;
+   display: flex;
+}
+li{   
+    text-align: center;
+    list-style-type: none;
     padding: 20px;
-    list-style: none;
-     
+    font-weight: bold;
+    background-color: rgb(255, 123, 0);
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: rgb(238, 130, 7);
+    background-color: azure;
+    border-radius: 5px;
+}
+/* BANNER */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url("img/img1.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.texto-banner p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* fundo transparente pra destacar texto */
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.texto-banner h1{
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 10px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+
+.botao{
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    background-color:  rgb(255, 123, 00);
+    color: white;
+    margin-left: 900px;
+    margin-bottom: 30px;
+}
+h2{
+    padding: 10px;
+    text-align: center;
+    color:  rgb(255, 123, 00);
+    font-size: 30px;   
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer{
+    background-color: rgb(255, 123, 0);
+    text-align: justify;
+    border-top: 4px solid rgb(255, 94, 0);
+    font-size: 13px;
+}
+h3{
+    padding-top: 5px;
+    text-align: center;
+    color: black;
+    padding-bottom: 13px;
+}
+
+/*CONTATO STYLE*/
+/* ----------- CONTATO ----------- */
+section.contato {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section.contato h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+section.contato label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+section.contato input,
+section.contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+section.contato textarea {
+    resize: none;
+    height: 120px;
+}
+
+section.contato button {
+    margin-top: 20px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 300px;
+}
+
+section.contato button:hover {
+    background-color: darkorange;
+}
+.contato-whatsapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 400px; /* largura máxima da área do WhatsApp */
+    padding: 20px;
+    background-color: #f0f0f0; /* leve contraste */
+    border-radius: 12px;
+}
+
+.contato-whatsapp h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+.btn-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50px; /* botão ocupa toda a largura da div */
+    background-color: #25D366;
+    color: white;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-whatsapp img {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.05);
+    background-color: #1ebe57;
 }
