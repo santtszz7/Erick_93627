@@ -180,7 +180,8 @@ section.contato button:hover {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 50px; /* botão ocupa toda a largura da div */
+    width: 50
+    px; /* botão ocupa toda a largura da div */
     background-color: #25D366;
     color: white;
     font-weight: bold;

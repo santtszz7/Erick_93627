@@ -1,0 +1,33 @@
+
+.pai{
+    background-color: aqua;
+    width: 420px;
+    height: 420px;
+    align-items: center;
+    margin: 25px;
+}
+
+.f1{
+    background-color: red;
+    width: 120px;
+    height: 120px;
+    position: sticky;
+    /*4 POSSIBILIDADES
+         DIREITA
+         ESQUERDA
+         EM CIMA
+         EM BAIXO*/
+    left: 120px;
+    right: 120px;
+    top: 50px;
+    bottom: 90px;
+}
+
+.f2{
+
+    background-color: blue;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    left: 200px;
+}
