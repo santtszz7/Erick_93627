@@ -1,0 +1,54 @@
+/* Centraliza o conteúdo na página*/
+body {
+    font-family: Arial, Helvetica, sans-serif; /**/
+    background-color: rgb(0, 0, 0); /**/
+    display: flex; /**/
+    justify-content: center; /**/
+    align-items: center; /**/
+    height: 100vh; /**/
+    margin: 0; /**/
+}
+
+/*Define p estilo do container*/
+.container {
+    background-color: rgb(241, 8, 8); /* Fundo branco*/
+    padding: 20px; /**/
+    border-radius: 10px; /**/
+    box-shadow: 0 4px 8 px rgba(0, 0, 0, 0.1); /**/
+    width: 300px; /**/
+    text-align: center; /**/
+}
+h2{
+    color: #000000; /* Cor do texto*/
+    margin-bottom: 20px; /*Espaçamento inferior*/
+}
+/*Estilo para o formulário*/
+form{
+    display: flex; /**/
+    flex-direction: column;/**/
+    gap: 10px; /*Espaçamento entre os itens*/
+}
+/*Estilo para os campos de imput*/
+input{
+    padding: 10px; /**/
+    border: 1p´x solid #ccc; /**/
+    border-radius: 5px; /**/
+}
+/*Estilo para o botão*/
+button{
+    padding: 10px; /*Espaçamento interno*/
+    background-color: #000000; /*Cor Verde*/
+    color: white; /*Texto Branco*/
+    border: none; /*Remove borda*/
+    border-radius: 5px; /*Bordas arredondadas*/
+    cursor: pointer; /*Define o cursor como "pointer"*/
+}
+/*Efeito ao passar o mouse sobre o botão*/
+button:hover{
+    background-color: #3f2b2b; /* Cor mais escura no hover*/
+}
+/*Estilo para o resultado*/
+#resultado{
+    margin-top: 20px; /*Espaçamento superior*/
+    text-align: left; /*Alinha o texto a esquerda*/
+}
